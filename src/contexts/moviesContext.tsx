@@ -60,21 +60,21 @@ export default function MoviesContextProvider({ children }: ProviderProps) {
     }
   };
 
-  return (
-    <MoviesContext.Provider
-      value={{
-        query,
-        setQuery,
-        movies,
-        fetchMovies,
-        watchedMovies,
-        setWatchedMovies,
-      }}
-    >
-      {children}
-    </MoviesContext.Provider>
-  );
-}
+//   return (
+//     <MoviesContext.Provider
+//       value={{
+//         query,
+//         setQuery,
+//         movies,
+//         fetchMovies,
+//         watchedMovies,
+//         setWatchedMovies,
+//       }}
+//     >
+//       {children}
+//     </MoviesContext.Provider>
+//   );
+// }
 
 function useMovies() {
   const context = useContext(MoviesContext);
